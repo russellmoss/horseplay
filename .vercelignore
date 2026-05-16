@@ -1,5 +1,5 @@
 auth/
-data/
+/data/
 export/
 .mcp.json
 *.log
