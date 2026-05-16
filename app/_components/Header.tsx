@@ -18,21 +18,14 @@ interface HeaderProps {
   scraperMessage: string;
   scraperFramesReceived: number;
   scraperLastFrameAt: string | null;
-  /** True when FanDuel's PerimeterX challenge is blocking the scraper. */
   botChallengePending: boolean;
-  /** ISO timestamp when the challenge was first detected, or null. */
   botChallengeDetectedAt: string | null;
-  /** Tracks currently being scraped. */
   trackedTracks: string[];
-  /** Default track set from config — these can't be removed in the UI. */
   defaultTracks: string[];
-  /**
-   * Called after a track is added with a `?race=N` URL hint, so the dashboard
-   * can auto-select that race once it appears in data.races.
-   */
   onTrackAdded?: (info: { trackCode: string; raceNumber: number | null }) => void;
   soundEnabled: boolean;
   onToggleSound: () => void;
+  viewerMode?: boolean;
 }
 
 export function Header(props: HeaderProps) {
@@ -53,6 +46,7 @@ export function Header(props: HeaderProps) {
     onTrackAdded,
     soundEnabled,
     onToggleSound,
+    viewerMode,
   } = props;
 
   const tracks = Array.from(new Set(races.map((r) => r.race.trackCode))).sort();
@@ -101,7 +95,7 @@ export function Header(props: HeaderProps) {
 
   return (
     <div className="border-b border-zinc-800/60 bg-black/60 backdrop-blur-md">
-      {botChallengePending && (
+      {!viewerMode && botChallengePending && (
         <div className="border-b border-amber-700 bg-amber-950/95 px-4 py-3 text-sm text-amber-100">
           <div className="flex items-start gap-3">
             <div className="text-2xl">🤖</div>
@@ -125,7 +119,7 @@ export function Header(props: HeaderProps) {
           </div>
         </div>
       )}
-      {banner && (
+      {!viewerMode && banner && (
         <div
           className={`px-4 py-2 text-sm ${
             banner.tone === 'red'
@@ -167,20 +161,22 @@ export function Header(props: HeaderProps) {
           </select>
         </div>
 
-        <div className="basis-full">
-          <AddTrackInput
-            trackedTracks={trackedTracks}
-            defaultTracks={defaultTracks}
-            onTrackAdded={onTrackAdded}
-            currentTrackCode={selectedTrack ?? null}
-            onSelectTrack={(tc) => {
-              const firstAtTrack = races
-                .filter((r) => r.race.trackCode === tc)
-                .sort((a, b) => a.race.raceNumber - b.race.raceNumber)[0];
-              if (firstAtTrack) onSelectRace(firstAtTrack.race.raceId);
-            }}
-          />
-        </div>
+        {!viewerMode && (
+          <div className="basis-full">
+            <AddTrackInput
+              trackedTracks={trackedTracks}
+              defaultTracks={defaultTracks}
+              onTrackAdded={onTrackAdded}
+              currentTrackCode={selectedTrack ?? null}
+              onSelectTrack={(tc) => {
+                const firstAtTrack = races
+                  .filter((r) => r.race.trackCode === tc)
+                  .sort((a, b) => a.race.raceNumber - b.race.raceNumber)[0];
+                if (firstAtTrack) onSelectRace(firstAtTrack.race.raceId);
+              }}
+            />
+          </div>
+        )}
 
         <div className="flex items-center gap-2 text-sm">
           <label className="text-zinc-400">Race:</label>
@@ -246,17 +242,19 @@ export function Header(props: HeaderProps) {
           </span>
         </div>
 
-        <div className="flex items-center gap-1 text-xs text-zinc-500">
-          <span>scraper:</span>
-          <span
-            className={`font-mono ${
-              healthy ? 'text-green-400' : 'text-red-400'
-            }`}
-          >
-            {scraperState}
-          </span>
-          <span className="ml-1">({scraperFramesReceived} frames)</span>
-        </div>
+        {!viewerMode && (
+          <div className="flex items-center gap-1 text-xs text-zinc-500">
+            <span>scraper:</span>
+            <span
+              className={`font-mono ${
+                healthy ? 'text-green-400' : 'text-red-400'
+              }`}
+            >
+              {scraperState}
+            </span>
+            <span className="ml-1">({scraperFramesReceived} frames)</span>
+          </div>
+        )}
 
         <div className="ml-auto flex items-center gap-1">
           <button

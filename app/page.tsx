@@ -500,6 +500,7 @@ export default function DashboardPage() {
           }}
           soundEnabled={soundEnabled}
           onToggleSound={handleToggleSound}
+          viewerMode={data.status.state === 'remote'}
         />
         {/* Spacer so the image actually shows between the header and the
             content below — that's the part the user sees uncovered. */}
@@ -576,15 +577,17 @@ export default function DashboardPage() {
         </div>
       )}
 
-      <Chat
-        bets={bets}
-        focusedRaceId={selectedRace?.race.raceId ?? null}
-        focusedRaceLabel={
-          selectedRace
-            ? `${selectedRace.race.trackCode} R${selectedRace.race.raceNumber}`
-            : null
-        }
-      />
+      {data.status.state !== 'remote' && (
+        <Chat
+          bets={bets}
+          focusedRaceId={selectedRace?.race.raceId ?? null}
+          focusedRaceLabel={
+            selectedRace
+              ? `${selectedRace.race.trackCode} R${selectedRace.race.raceNumber}`
+              : null
+          }
+        />
+      )}
 
       {/* Video toggle — sits just above the chat launcher */}
       <button

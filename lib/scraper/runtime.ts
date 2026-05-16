@@ -19,7 +19,8 @@ export type ScraperState =
   | 'starting'
   | 'running'
   | 'unhealthy'
-  | 'session_expired';
+  | 'session_expired'
+  | 'remote';
 
 export interface ScraperStatus {
   state: ScraperState;
