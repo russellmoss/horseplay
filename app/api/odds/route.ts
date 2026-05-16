@@ -6,6 +6,14 @@ export const runtime = 'nodejs';
 
 const scraperEnabled = process.env.ENABLE_SCRAPER === 'true';
 
+async function getTrackedTracksFromDb(): Promise<string[]> {
+  const url = process.env.DATABASE_URL;
+  if (!url) return [];
+  const sql = neon(url);
+  const rows = await sql`SELECT track_code FROM tracked_tracks ORDER BY added_at ASC`;
+  return rows.map((r) => r.track_code as string);
+}
+
 export async function GET() {
   if (scraperEnabled) {
     const { listRaces } = await import('../../../lib/store');
@@ -15,20 +23,11 @@ export async function GET() {
     return NextResponse.json({ status, races, count: races.length });
   }
 
-  const db = await import('../../../lib/db');
-  const races = await db.listRacesFromDb();
-  const trackedTracks = await db.listTrackedTracks();
-
-  // Direct DB query for debugging
-  let rawTracks: string[] = [];
-  try {
-    const sql = neon(process.env.DATABASE_URL!);
-    const rows = await sql`SELECT track_code FROM tracked_tracks ORDER BY added_at ASC`;
-    rawTracks = rows.map((r) => r.track_code as string);
-  } catch (e) {
-    rawTracks = [`ERROR: ${e instanceof Error ? e.message : String(e)}`];
-  }
-
+  const { listRacesFromDb } = await import('../../../lib/db');
+  const [races, trackedTracks] = await Promise.all([
+    listRacesFromDb(),
+    getTrackedTracksFromDb(),
+  ]);
   return NextResponse.json({
     status: {
       state: 'remote',
@@ -44,6 +43,5 @@ export async function GET() {
     },
     races,
     count: races.length,
-    _debug: { trackedTracks, rawTracks },
   });
 }
