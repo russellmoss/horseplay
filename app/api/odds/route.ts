@@ -19,20 +19,29 @@ export async function GET() {
     listRacesFromDb(),
     listTrackedTracks(),
   ]);
-  return NextResponse.json({
-    status: {
-      state: 'remote',
-      message: 'Viewer mode — data from operator scraper',
-      startedAt: null,
-      lastFrameAt: null,
-      framesReceived: 0,
-      analysesCached: races.length,
-      lastError: null,
-      botChallengePending: false,
-      botChallengeDetectedAt: null,
-      trackedTracks,
+  return NextResponse.json(
+    {
+      status: {
+        state: 'remote',
+        message: 'Viewer mode — data from operator scraper',
+        startedAt: null,
+        lastFrameAt: null,
+        framesReceived: 0,
+        analysesCached: races.length,
+        lastError: null,
+        botChallengePending: false,
+        botChallengeDetectedAt: null,
+        trackedTracks,
+      },
+      races,
+      count: races.length,
     },
-    races,
-    count: races.length,
-  });
+    {
+      headers: {
+        'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
+        'CDN-Cache-Control': 'no-store',
+        'Vercel-CDN-Cache-Control': 'no-store',
+      },
+    },
+  );
 }
