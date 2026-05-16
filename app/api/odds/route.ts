@@ -35,6 +35,10 @@ export async function GET() {
     },
     races,
     count: races.length,
-    _debug: { trackedTracks, debugTrackedTracks, hasListFn: typeof db.listTrackedTracks },
+    _debug: {
+      trackedTracks,
+      debugTrackedTracks,
+      dbUrl: (process.env.DATABASE_URL ?? '').replace(/:[^@]+@/, ':***@').slice(0, 80),
+    },
   });
 }
