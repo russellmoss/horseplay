@@ -1,4 +1,10 @@
 import { NextResponse } from 'next/server';
+import {
+  addTrackedTrack,
+  removeTrackedTrack,
+  listTrackedTracks,
+  countTrackedTracks,
+} from '../../../lib/db';
 
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
@@ -15,14 +21,12 @@ interface RemoveTrackBody {
   trackCode: string;
 }
 
-export async function POST(req: Request) {
-  if (!scraperEnabled) {
-    return NextResponse.json(
-      { error: 'Track management not available in viewer mode' },
-      { status: 503 },
-    );
-  }
+export async function GET() {
+  const trackedTracks = await listTrackedTracks();
+  return NextResponse.json({ trackedTracks });
+}
 
+export async function POST(req: Request) {
   let body: AddTrackBody;
   try {
     body = (await req.json()) as AddTrackBody;
@@ -54,8 +58,18 @@ export async function POST(req: Request) {
   }
 
   try {
-    const { scraperRuntime } = await import('../../../lib/scraper/runtime');
-    const trackedTracks = await scraperRuntime.addTrack(trackCode);
+    await addTrackedTrack(trackCode);
+
+    if (scraperEnabled) {
+      try {
+        const { scraperRuntime } = await import('../../../lib/scraper/runtime');
+        await scraperRuntime.addTrack(trackCode);
+      } catch {
+        // Scraper notification failed — track is saved in DB, scraper will pick it up on next sync
+      }
+    }
+
+    const trackedTracks = await listTrackedTracks();
     return NextResponse.json({
       ok: true,
       trackCode,
@@ -72,30 +86,44 @@ export async function POST(req: Request) {
 }
 
 export async function DELETE(req: Request) {
-  if (!scraperEnabled) {
-    return NextResponse.json(
-      { error: 'Track management not available in viewer mode' },
-      { status: 503 },
-    );
-  }
-
   let body: RemoveTrackBody;
   try {
     body = (await req.json()) as RemoveTrackBody;
   } catch {
     return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 });
   }
-  if (typeof body.trackCode !== 'string' || body.trackCode.trim().length === 0) {
+
+  const code = typeof body.trackCode === 'string' ? body.trackCode.trim().toUpperCase() : '';
+  if (!code) {
     return NextResponse.json({ error: 'trackCode required' }, { status: 400 });
   }
+
   try {
-    const { scraperRuntime } = await import('../../../lib/scraper/runtime');
-    const trackedTracks = await scraperRuntime.removeTrack(body.trackCode);
+    const count = await countTrackedTracks();
+    if (count <= 1) {
+      return NextResponse.json(
+        { error: 'Cannot remove the last tracked track.' },
+        { status: 400 },
+      );
+    }
+
+    await removeTrackedTrack(code);
+
+    if (scraperEnabled) {
+      try {
+        const { scraperRuntime } = await import('../../../lib/scraper/runtime');
+        await scraperRuntime.removeTrack(code);
+      } catch {
+        // Scraper notification failed — track is removed from DB, scraper will sync
+      }
+    }
+
+    const trackedTracks = await listTrackedTracks();
     return NextResponse.json({ ok: true, trackedTracks });
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
     return NextResponse.json(
-      { error: `Could not remove ${body.trackCode}: ${msg}` },
+      { error: `Could not remove ${code}: ${msg}` },
       { status: 400 },
     );
   }

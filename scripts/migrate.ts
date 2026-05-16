@@ -35,6 +35,21 @@ async function migrate() {
     ON race_analyses(post_time_utc)
   `;
 
+  console.log('Creating tracked_tracks table...');
+
+  await sql`
+    CREATE TABLE IF NOT EXISTS tracked_tracks (
+      track_code TEXT PRIMARY KEY,
+      added_at   TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    )
+  `;
+
+  await sql`
+    INSERT INTO tracked_tracks (track_code)
+    VALUES ('CD')
+    ON CONFLICT (track_code) DO NOTHING
+  `;
+
   console.log('Migration complete.');
 }
 

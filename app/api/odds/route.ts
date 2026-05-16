@@ -14,8 +14,11 @@ export async function GET() {
     return NextResponse.json({ status, races, count: races.length });
   }
 
-  const { listRacesFromDb } = await import('../../../lib/db');
-  const races = await listRacesFromDb();
+  const { listRacesFromDb, listTrackedTracks } = await import('../../../lib/db');
+  const [races, trackedTracks] = await Promise.all([
+    listRacesFromDb(),
+    listTrackedTracks(),
+  ]);
   return NextResponse.json({
     status: {
       state: 'remote',
@@ -27,7 +30,7 @@ export async function GET() {
       lastError: null,
       botChallengePending: false,
       botChallengeDetectedAt: null,
-      trackedTracks: [],
+      trackedTracks,
     },
     races,
     count: races.length,

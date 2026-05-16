@@ -161,22 +161,20 @@ export function Header(props: HeaderProps) {
           </select>
         </div>
 
-        {!viewerMode && (
-          <div className="basis-full">
-            <AddTrackInput
-              trackedTracks={trackedTracks}
-              defaultTracks={defaultTracks}
-              onTrackAdded={onTrackAdded}
-              currentTrackCode={selectedTrack ?? null}
-              onSelectTrack={(tc) => {
-                const firstAtTrack = races
-                  .filter((r) => r.race.trackCode === tc)
-                  .sort((a, b) => a.race.raceNumber - b.race.raceNumber)[0];
-                if (firstAtTrack) onSelectRace(firstAtTrack.race.raceId);
-              }}
-            />
-          </div>
-        )}
+        <div className="basis-full">
+          <AddTrackInput
+            trackedTracks={trackedTracks}
+            defaultTracks={defaultTracks}
+            onTrackAdded={onTrackAdded}
+            currentTrackCode={selectedTrack ?? null}
+            onSelectTrack={(tc) => {
+              const firstAtTrack = races
+                .filter((r) => r.race.trackCode === tc)
+                .sort((a, b) => a.race.raceNumber - b.race.raceNumber)[0];
+              if (firstAtTrack) onSelectRace(firstAtTrack.race.raceId);
+            }}
+          />
+        </div>
 
         <div className="flex items-center gap-2 text-sm">
           <label className="text-zinc-400">Race:</label>

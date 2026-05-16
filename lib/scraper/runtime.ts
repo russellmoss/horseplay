@@ -97,6 +97,7 @@ export function createScraperRuntime(
 
   let session: Session | null = null;
   let poller: RunningPoller | null = null;
+  let dbSyncTimer: ReturnType<typeof setInterval> | null = null;
 
   function snapshot(): ScraperStatus {
     return {
@@ -158,9 +159,15 @@ export function createScraperRuntime(
 
     try {
       const cfg = deps.loadConfig();
-      // Seed trackedTracks from config the first time we start. Later
-      // start() / refresh() calls preserve any user-added tracks.
-      if (trackedTracks.length === 0) trackedTracks = [...cfg.trackedTracks];
+      if (trackedTracks.length === 0) {
+        try {
+          const { listTrackedTracks } = await import('../db');
+          const dbTracks = await listTrackedTracks();
+          trackedTracks = dbTracks.length > 0 ? dbTracks : [...cfg.trackedTracks];
+        } catch {
+          trackedTracks = [...cfg.trackedTracks];
+        }
+      }
       // Default to headed mode so the user can complete PerimeterX "Press &
       // Hold" challenges visually. Set SCRAPER_HEADLESS=true in .env to run
       // invisibly (you'll have no way to clear bot challenges).
@@ -170,6 +177,29 @@ export function createScraperRuntime(
       state = 'running';
       message = `Subscribed to ${trackedTracks.join(', ')}.`;
       startedAt = now();
+
+      if (!dbSyncTimer) {
+        dbSyncTimer = setInterval(() => {
+          void (async () => {
+            try {
+              const { listTrackedTracks } = await import('../db');
+              const dbTracks = await listTrackedTracks();
+              if (dbTracks.length === 0) return;
+              const current = new Set(trackedTracks);
+              const desired = new Set(dbTracks);
+              const same = current.size === desired.size &&
+                [...current].every((t) => desired.has(t));
+              if (!same) {
+                console.log('[derby-edge] DB track sync: updating', [...current], '→', dbTracks);
+                trackedTracks = dbTracks;
+                await refresh();
+              }
+            } catch {
+              // DB poll failed — keep running with current tracks
+            }
+          })();
+        }, 30_000);
+      }
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err);
       lastError = msg;
@@ -195,6 +225,10 @@ export function createScraperRuntime(
   }
 
   async function stop(): Promise<void> {
+    if (dbSyncTimer) {
+      clearInterval(dbSyncTimer);
+      dbSyncTimer = null;
+    }
     if (poller) {
       await poller.stop().catch(() => undefined);
       poller = null;
