@@ -1,18 +1,10 @@
 import { NextResponse } from 'next/server';
-import { neon } from '@neondatabase/serverless';
+import { listRacesFromDb, listTrackedTracks } from '../../../lib/db';
 
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
 
 const scraperEnabled = process.env.ENABLE_SCRAPER === 'true';
-
-async function getTrackedTracksFromDb(): Promise<string[]> {
-  const url = process.env.DATABASE_URL;
-  if (!url) return [];
-  const sql = neon(url);
-  const rows = await sql`SELECT track_code FROM tracked_tracks ORDER BY added_at ASC`;
-  return rows.map((r) => r.track_code as string);
-}
 
 export async function GET() {
   if (scraperEnabled) {
@@ -23,10 +15,9 @@ export async function GET() {
     return NextResponse.json({ status, races, count: races.length });
   }
 
-  const { listRacesFromDb } = await import('../../../lib/db');
   const [races, trackedTracks] = await Promise.all([
     listRacesFromDb(),
-    getTrackedTracksFromDb(),
+    listTrackedTracks(),
   ]);
   return NextResponse.json({
     status: {
