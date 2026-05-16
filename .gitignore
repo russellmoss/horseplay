@@ -19,8 +19,8 @@ auth/
 # exported XLSX files
 export/
 
-# Persisted simulation data (survives pnpm dev restart)
-data/
+# Persisted simulation data (survives pnpm dev restart) — top-level only
+/data/
 
 # logs
 *.log
@@ -43,3 +43,5 @@ coverage/
 
 # misc
 *.tsbuildinfo
+
+.vercel
