@@ -1,0 +1,96 @@
+{
+  "id": "CD-1",
+  "tvgRaceId": 3966630,
+  "raceNumber": "1",
+  "description": "Run for the Lilies — minimal synthetic finished race for adapter testing.",
+  "distance": "6f",
+  "purse": 100000,
+  "isGreyhound": false,
+  "numRunners": "5",
+  "numWagerableRunners": "5",
+  "claimingPrice": 0,
+  "surface": { "name": "Dirt", "shortName": "Dirt", "defaultCondition": "Fast", "__typename": "SurfaceEnumeration" },
+  "type": { "name": "Thoroughbred", "code": "T", "shortName": "T'bred", "__typename": "ShortNameEnumeration" },
+  "raceClass": { "name": "Maiden", "shortName": "Maiden", "__typename": "ShortNameEnumeration" },
+  "mtp": 0,
+  "postTime": "2026-05-02T17:00:00Z",
+  "status": { "code": "RO", "__typename": "StatusEnumeration" },
+  "raceDate": "2026-05-02",
+  "bettingInterests": [
+    {
+      "biNumber": 1,
+      "favorite": false,
+      "currentOdds": { "numerator": 5, "denominator": 1, "__typename": "Odd" },
+      "morningLineOdds": { "numerator": 5, "denominator": 1, "__typename": "Odd" },
+      "biPools": [
+        { "wagerType": { "code": "WN", "__typename": "WagerGroupEnumeration" }, "poolRunnersData": [{ "amount": 8000, "__typename": "BiPoolData" }], "__typename": "BiPool" },
+        { "wagerType": { "code": "PL", "__typename": "WagerGroupEnumeration" }, "poolRunnersData": [{ "amount": 3000, "__typename": "BiPoolData" }], "__typename": "BiPool" },
+        { "wagerType": { "code": "SH", "__typename": "WagerGroupEnumeration" }, "poolRunnersData": [{ "amount": 2000, "__typename": "BiPoolData" }], "__typename": "BiPool" }
+      ],
+      "runners": [{ "runnerId": "1", "scratched": false, "jockey": "Smith J", "trainer": "Jones T", "horseName": "Stakeholder", "__typename": "Runner" }],
+      "__typename": "BettingInterest"
+    },
+    {
+      "biNumber": 3,
+      "favorite": false,
+      "currentOdds": { "numerator": 6, "denominator": 1, "__typename": "Odd" },
+      "morningLineOdds": { "numerator": 5, "denominator": 1, "__typename": "Odd" },
+      "biPools": [
+        { "wagerType": { "code": "WN", "__typename": "WagerGroupEnumeration" }, "poolRunnersData": [{ "amount": 7000, "__typename": "BiPoolData" }], "__typename": "BiPool" },
+        { "wagerType": { "code": "PL", "__typename": "WagerGroupEnumeration" }, "poolRunnersData": [{ "amount": 2500, "__typename": "BiPoolData" }], "__typename": "BiPool" },
+        { "wagerType": { "code": "SH", "__typename": "WagerGroupEnumeration" }, "poolRunnersData": [{ "amount": 1800, "__typename": "BiPoolData" }], "__typename": "BiPool" }
+      ],
+      "runners": [{ "runnerId": "3", "scratched": false, "jockey": "Doe A", "trainer": "Roe B", "horseName": "Silent Way", "__typename": "Runner" }],
+      "__typename": "BettingInterest"
+    },
+    {
+      "biNumber": 4,
+      "favorite": false,
+      "currentOdds": { "numerator": 12, "denominator": 1, "__typename": "Odd" },
+      "morningLineOdds": { "numerator": 10, "denominator": 1, "__typename": "Odd" },
+      "biPools": [
+        { "wagerType": { "code": "WN", "__typename": "WagerGroupEnumeration" }, "poolRunnersData": [{ "amount": 4000, "__typename": "BiPoolData" }], "__typename": "BiPool" },
+        { "wagerType": { "code": "PL", "__typename": "WagerGroupEnumeration" }, "poolRunnersData": [{ "amount": 1500, "__typename": "BiPoolData" }], "__typename": "BiPool" },
+        { "wagerType": { "code": "SH", "__typename": "WagerGroupEnumeration" }, "poolRunnersData": [{ "amount": 800, "__typename": "BiPoolData" }], "__typename": "BiPool" }
+      ],
+      "runners": [{ "runnerId": "4", "scratched": false, "jockey": "Lee C", "trainer": "Kim D", "horseName": "Ingleborough", "__typename": "Runner" }],
+      "__typename": "BettingInterest"
+    },
+    {
+      "biNumber": 11,
+      "favorite": true,
+      "currentOdds": { "numerator": 1, "denominator": 1, "__typename": "Odd" },
+      "morningLineOdds": { "numerator": 6, "denominator": 5, "__typename": "Odd" },
+      "biPools": [
+        { "wagerType": { "code": "WN", "__typename": "WagerGroupEnumeration" }, "poolRunnersData": [{ "amount": 30000, "__typename": "BiPoolData" }], "__typename": "BiPool" },
+        { "wagerType": { "code": "PL", "__typename": "WagerGroupEnumeration" }, "poolRunnersData": [{ "amount": 12000, "__typename": "BiPoolData" }], "__typename": "BiPool" },
+        { "wagerType": { "code": "SH", "__typename": "WagerGroupEnumeration" }, "poolRunnersData": [{ "amount": 8000, "__typename": "BiPoolData" }], "__typename": "BiPool" }
+      ],
+      "runners": [{ "runnerId": "11", "scratched": false, "jockey": "Velazquez J", "trainer": "Mott W", "horseName": "Powershift", "__typename": "Runner" }],
+      "__typename": "BettingInterest"
+    }
+  ],
+  "racePools": [
+    { "wagerType": { "code": "WN", "__typename": "WagerGroupEnumeration" }, "amount": 49000, "__typename": "PoolType" },
+    { "wagerType": { "code": "PL", "__typename": "WagerGroupEnumeration" }, "amount": 19000, "__typename": "PoolType" },
+    { "wagerType": { "code": "SH", "__typename": "WagerGroupEnumeration" }, "amount": 12600, "__typename": "PoolType" }
+  ],
+  "results": {
+    "runners": [
+      { "betAmount": 2.0, "biNumber": 11, "finishPosition": 1, "placePayoff": 2.7, "runnerName": "Powershift",   "showPayoff": 2.4, "winPayoff": 4.14, "runnerNumber": "11", "__typename": "ResultRunner" },
+      { "betAmount": 2.0, "biNumber": 3,  "finishPosition": 2, "placePayoff": 3.06, "runnerName": "Silent Way",  "showPayoff": 2.64, "winPayoff": 0.00, "runnerNumber": "3",  "__typename": "ResultRunner" },
+      { "betAmount": 2.0, "biNumber": 4,  "finishPosition": 3, "placePayoff": 0.00, "runnerName": "Ingleborough","showPayoff": 9.70, "winPayoff": 0.00, "runnerNumber": "4",  "__typename": "ResultRunner" },
+      { "betAmount": 2.0, "biNumber": 1,  "finishPosition": 4, "placePayoff": 0.00, "runnerName": "Stakeholder", "showPayoff": 0.00, "winPayoff": 0.00, "runnerNumber": "1",  "__typename": "ResultRunner" }
+    ],
+    "payoffs": [
+      { "wagerType": { "code": "WN", "name": "Win",    "__typename": "WagerGroupEnumeration" }, "wagerAmount": 2.0, "selections": [{ "selection": "11",   "payoutAmount": 4.14 }] },
+      { "wagerType": { "code": "PL", "name": "Place",  "__typename": "WagerGroupEnumeration" }, "wagerAmount": 2.0, "selections": [{ "selection": "11",   "payoutAmount": 2.70 }] },
+      { "wagerType": { "code": "PL", "name": "Place",  "__typename": "WagerGroupEnumeration" }, "wagerAmount": 2.0, "selections": [{ "selection": "3",    "payoutAmount": 3.06 }] },
+      { "wagerType": { "code": "SH", "name": "Show",   "__typename": "WagerGroupEnumeration" }, "wagerAmount": 2.0, "selections": [{ "selection": "11",   "payoutAmount": 2.40 }] },
+      { "wagerType": { "code": "SH", "name": "Show",   "__typename": "WagerGroupEnumeration" }, "wagerAmount": 2.0, "selections": [{ "selection": "3",    "payoutAmount": 2.64 }] },
+      { "wagerType": { "code": "SH", "name": "Show",   "__typename": "WagerGroupEnumeration" }, "wagerAmount": 2.0, "selections": [{ "selection": "4",    "payoutAmount": 9.70 }] }
+    ],
+    "winningTime": 101.86,
+    "__typename": "ResultsType"
+  }
+}

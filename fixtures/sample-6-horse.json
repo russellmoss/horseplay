@@ -1,0 +1,19 @@
+{
+  "raceId": "TEST-1",
+  "trackCode": "TST",
+  "raceNumber": 1,
+  "postTimeUtc": "2026-05-02T22:00:00Z",
+  "status": "open",
+  "horses": [
+    { "program": "1", "name": "Alpha",   "mlOdds": 3.0,  "currentOdds": 3.0,  "winPoolDollars": 50000, "placePoolDollars": 20000, "showPoolDollars": 10000, "scratched": false },
+    { "program": "2", "name": "Bravo",   "mlOdds": 4.0,  "currentOdds": 4.5,  "winPoolDollars": 35000, "placePoolDollars": 15000, "showPoolDollars": 8000,  "scratched": false },
+    { "program": "3", "name": "Charlie", "mlOdds": 6.0,  "currentOdds": 6.0,  "winPoolDollars": 25000, "placePoolDollars": 12000, "showPoolDollars": 7000,  "scratched": false },
+    { "program": "4", "name": "Delta",   "mlOdds": 8.0,  "currentOdds": 12.0, "winPoolDollars": 12000, "placePoolDollars": 8000,  "showPoolDollars": 6000,  "scratched": false },
+    { "program": "5", "name": "Echo",    "mlOdds": 11.0, "currentOdds": 14.0, "winPoolDollars": 10000, "placePoolDollars": 7000,  "showPoolDollars": 5500,  "scratched": false },
+    { "program": "6", "name": "Foxtrot", "mlOdds": 21.0, "currentOdds": 26.0, "winPoolDollars": 6000,  "placePoolDollars": 4000,  "showPoolDollars": 3500,  "scratched": false }
+  ],
+  "totalWinPool": 138000,
+  "totalPlacePool": 66000,
+  "totalShowPool": 40000,
+  "lastUpdate": "2026-05-02T21:45:00Z"
+}

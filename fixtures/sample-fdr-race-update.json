@@ -1,0 +1,5400 @@
+{
+  "id": "CD-7",
+  "tvgRaceId": 3966636,
+  "raceNumber": "7",
+  "description": "Longines Churchill Distaff Turf Mile S. - FOR FILLIES AND MARES, FOUR YEARS OLD AND UPWARD. ",
+  "specialCardSourceRace": null,
+  "distance": "8f",
+  "purse": 1000000,
+  "isGreyhound": false,
+  "highlighted": {
+    "description": "Distaff Turf Mile",
+    "style": "Highlighted",
+    "__typename": "HighlightedType"
+  },
+  "numRunners": "9",
+  "numWagerableRunners": "9",
+  "claimingPrice": 0,
+  "surface": {
+    "name": "Turf",
+    "shortName": "Turf",
+    "defaultCondition": "Firm",
+    "__typename": "SurfaceEnumeration"
+  },
+  "type": {
+    "name": "Thoroughbred",
+    "code": "T",
+    "shortName": "T'bred",
+    "__typename": "ShortNameEnumeration"
+  },
+  "raceClass": {
+    "name": "Stakes",
+    "shortName": "Stakes",
+    "__typename": "ShortNameEnumeration"
+  },
+  "talentPicks": [
+    {
+      "id": "209056",
+      "__typename": "TalentPickType"
+    },
+    {
+      "id": "209063",
+      "__typename": "TalentPickType"
+    },
+    {
+      "id": "209074",
+      "__typename": "TalentPickType"
+    },
+    {
+      "id": "209122",
+      "__typename": "TalentPickType"
+    },
+    {
+      "id": "209097",
+      "__typename": "TalentPickType"
+    }
+  ],
+  "timeform": {
+    "analystVerdict": "This doesn't look the deepest Group Two. PIN UP BETTY ought to go well and is the selection. Classic Q has the rider for the big occasion up and can come out best of the remainder. Movin' On Up can't be ruled out of it either.",
+    "__typename": "RaceTimeform"
+  },
+  "changes": null,
+  "__typename": "Race",
+  "mtp": 3,
+  "postTime": "2026-05-02T18:38:00Z",
+  "status": {
+    "code": "IC",
+    "__typename": "StatusEnumeration"
+  },
+  "raceDate": "2026-05-02",
+  "video": {
+    "liveStreaming": true,
+    "onTvg": false,
+    "onTvg2": false,
+    "streams": [
+      "churchill_derby_mbr"
+    ],
+    "hasReplay": true,
+    "replayFileName": null,
+    "mobileAvailable": null,
+    "isStreamHighDefinition": true,
+    "__typename": "Video"
+  },
+  "wagerTypes": [
+    {
+      "positionCount": 1,
+      "minWagerAmount": 2,
+      "wagerAmounts": [
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 1,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "WIN",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 10,
+        "name": "Win",
+        "code": "WN",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 10,
+        "name": "Win",
+        "code": "WN",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 1,
+      "minWagerAmount": 2,
+      "wagerAmounts": [
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 1,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "PLC",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 20,
+        "name": "Place",
+        "code": "PL",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 20,
+        "name": "Place",
+        "code": "PL",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 1,
+      "minWagerAmount": 2,
+      "wagerAmounts": [
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 1,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "SHW",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 30,
+        "name": "Show",
+        "code": "SH",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 30,
+        "name": "Show",
+        "code": "SH",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 1,
+      "minWagerAmount": 2,
+      "wagerAmounts": [
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 1,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "WP",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 40,
+        "name": "Win/Place",
+        "code": "WP",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 10,
+        "name": "Win",
+        "code": "WN",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 1,
+      "minWagerAmount": 2,
+      "wagerAmounts": [
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 1,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "WS",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 50,
+        "name": "Win/Show",
+        "code": "WS",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 10,
+        "name": "Win",
+        "code": "WN",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 1,
+      "minWagerAmount": 2,
+      "wagerAmounts": [
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 1,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "PS",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 60,
+        "name": "Place/Show",
+        "code": "PS",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 20,
+        "name": "Place",
+        "code": "PL",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 1,
+      "minWagerAmount": 2,
+      "wagerAmounts": [
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 1,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "WPS",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 70,
+        "name": "Win/Place/Show",
+        "code": "WPS",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 10,
+        "name": "Win",
+        "code": "WN",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 2,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 2,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "EX",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 110,
+        "name": "Exacta",
+        "code": "EX",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 110,
+        "name": "Exacta",
+        "code": "EX",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 1,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 1,
+      "legCount": 1,
+      "isBox": true,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "EX",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 120,
+        "name": "Exacta Box",
+        "code": "EXB",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 110,
+        "name": "Exacta",
+        "code": "EX",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 2,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 2,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": true,
+      "unitedWagerTypeCode": "EX",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 130,
+        "name": "Exacta Wheel",
+        "code": "EXW",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 110,
+        "name": "Exacta",
+        "code": "EX",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 2,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 2,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": true,
+      "isWheel": false,
+      "unitedWagerTypeCode": "EX",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 140,
+        "name": "Exacta Key",
+        "code": "EXK",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 110,
+        "name": "Exacta",
+        "code": "EX",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 2,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 2,
+      "legCount": 1,
+      "isBox": true,
+      "isKey": true,
+      "isWheel": false,
+      "unitedWagerTypeCode": "EX",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 150,
+        "name": "Exacta Key Box",
+        "code": "EKB",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 110,
+        "name": "Exacta",
+        "code": "EX",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 3,
+      "minWagerAmount": 0.5,
+      "wagerAmounts": [
+        0.5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 3,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "TRI",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 160,
+        "name": "Trifecta",
+        "code": "TR",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 160,
+        "name": "Trifecta",
+        "code": "TR",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 1,
+      "minWagerAmount": 0.5,
+      "wagerAmounts": [
+        0.5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 1,
+      "legCount": 1,
+      "isBox": true,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "TRI",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 170,
+        "name": "Trifecta Box",
+        "code": "TRB",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 160,
+        "name": "Trifecta",
+        "code": "TR",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 3,
+      "minWagerAmount": 0.5,
+      "wagerAmounts": [
+        0.5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 3,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": true,
+      "unitedWagerTypeCode": "TRI",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 180,
+        "name": "Trifecta Wheel",
+        "code": "TRW",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 160,
+        "name": "Trifecta",
+        "code": "TR",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 3,
+      "minWagerAmount": 0.5,
+      "wagerAmounts": [
+        0.5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 2,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": true,
+      "isWheel": false,
+      "unitedWagerTypeCode": "TRI",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 190,
+        "name": "Trifecta Key",
+        "code": "TRK",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 160,
+        "name": "Trifecta",
+        "code": "TR",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 3,
+      "minWagerAmount": 0.5,
+      "wagerAmounts": [
+        0.5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 2,
+      "legCount": 1,
+      "isBox": true,
+      "isKey": true,
+      "isWheel": false,
+      "unitedWagerTypeCode": "TRI",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 200,
+        "name": "Trifecta Key Box",
+        "code": "TKB",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 160,
+        "name": "Trifecta",
+        "code": "TR",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 4,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 4,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "SPR",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 210,
+        "name": "Superfecta",
+        "code": "SU",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 210,
+        "name": "Superfecta",
+        "code": "SU",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 1,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 1,
+      "legCount": 1,
+      "isBox": true,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "SPR",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 220,
+        "name": "Superfecta Box",
+        "code": "SUB",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 210,
+        "name": "Superfecta",
+        "code": "SU",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 4,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 4,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": true,
+      "unitedWagerTypeCode": "SPR",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 230,
+        "name": "Superfecta Wheel",
+        "code": "SUW",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 210,
+        "name": "Superfecta",
+        "code": "SU",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 4,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 2,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": true,
+      "isWheel": false,
+      "unitedWagerTypeCode": "SPR",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 240,
+        "name": "Superfecta Key",
+        "code": "SUK",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 210,
+        "name": "Superfecta",
+        "code": "SU",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 4,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 2,
+      "legCount": 1,
+      "isBox": true,
+      "isKey": true,
+      "isWheel": false,
+      "unitedWagerTypeCode": "SPR",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 250,
+        "name": "Superfecta Key Box",
+        "code": "SKB",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 210,
+        "name": "Superfecta",
+        "code": "SU",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 5,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 5,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "PEN",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 260,
+        "name": "Superhighfive",
+        "code": "SH5",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 260,
+        "name": "Superhighfive",
+        "code": "SH5",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 1,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 1,
+      "legCount": 1,
+      "isBox": true,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "PEN",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 270,
+        "name": "Superhighfive Box",
+        "code": "H5B",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 260,
+        "name": "Superhighfive",
+        "code": "SH5",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 5,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 5,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": true,
+      "unitedWagerTypeCode": "PEN",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 280,
+        "name": "Superhighfive Wheel",
+        "code": "H5W",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 260,
+        "name": "Superhighfive",
+        "code": "SH5",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 5,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 2,
+      "legCount": 1,
+      "isBox": false,
+      "isKey": true,
+      "isWheel": false,
+      "unitedWagerTypeCode": "PEN",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 290,
+        "name": "Superhighfive Key",
+        "code": "S5K",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 260,
+        "name": "Superhighfive",
+        "code": "SH5",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 5,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 2,
+      "legCount": 1,
+      "isBox": true,
+      "isKey": true,
+      "isWheel": false,
+      "unitedWagerTypeCode": "PEN",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 300,
+        "name": "Superhighfive Key Box",
+        "code": "5KB",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 260,
+        "name": "Superhighfive",
+        "code": "SH5",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 2,
+      "minWagerAmount": 1,
+      "wagerAmounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 2,
+      "legCount": 2,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "DD",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 310,
+        "name": "Daily Double",
+        "code": "DB",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 310,
+        "name": "Daily Double",
+        "code": "DB",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 3,
+      "minWagerAmount": 0.5,
+      "wagerAmounts": [
+        0.5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 3,
+      "legCount": 3,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "PK3",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 330,
+        "name": "Pick 3",
+        "code": "P3",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 330,
+        "name": "Pick 3",
+        "code": "P3",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    },
+    {
+      "positionCount": 6,
+      "minWagerAmount": 0.2,
+      "wagerAmounts": [
+        0.2,
+        0.4,
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        15,
+        20,
+        25,
+        50,
+        100,
+        150,
+        200,
+        250,
+        500,
+        1000
+      ],
+      "columnCount": 6,
+      "legCount": 6,
+      "isBox": false,
+      "isKey": false,
+      "isWheel": false,
+      "unitedWagerTypeCode": "PK6",
+      "allowAlternateSelection": false,
+      "type": {
+        "id": 360,
+        "name": "Pick 6",
+        "code": "P6",
+        "__typename": "WagerTypeEnumeration"
+      },
+      "group": {
+        "id": 360,
+        "name": "Pick 6",
+        "code": "P6",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "__typename": "WagerType"
+    }
+  ],
+  "bettingInterests": [
+    {
+      "biNumber": 1,
+      "favorite": false,
+      "currentOdds": {
+        "numerator": 14,
+        "denominator": null,
+        "__typename": "Odd"
+      },
+      "morningLineOdds": {
+        "numerator": 10,
+        "denominator": null,
+        "__typename": "Odd"
+      },
+      "recentOdds": [
+        {
+          "trending": false,
+          "odd": "14",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": false,
+          "odd": "13",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": true,
+          "odd": "12",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": null,
+          "odd": "13",
+          "__typename": "RecentOdd"
+        }
+      ],
+      "biPools": [
+        {
+          "wagerType": {
+            "id": 310,
+            "code": "DB",
+            "name": "Daily Double",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 6235,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 740,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 224,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 788,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 2149,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 8755,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 695,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 851,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 265,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 483,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 215,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 110,
+            "code": "EX",
+            "name": "Exacta",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 11465,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 16215,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 5823,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 9607,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 3701,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 7980,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 11152,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 4131,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 20,
+            "code": "PL",
+            "name": "Place",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 37016,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 30,
+            "code": "SH",
+            "name": "Show",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 32981,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 10,
+            "code": "WN",
+            "name": "Win",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 96078,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        }
+      ],
+      "runners": [
+        {
+          "runnerId": "1",
+          "scratched": false,
+          "jockey": "Franco Manuel",
+          "trainer": "Motion H. G",
+          "horseName": "Italian Soiree",
+          "hasJockeyChanges": false,
+          "timeform": {
+            "analystsComments": "Winner last time out at Laurel Park 20 days ago. Lot more required based on our figures.",
+            "silkUrl": "https://timeform-usa.tvg.com/ussilks/20260502cd18381.png",
+            "silkUrlSvg": "https://timeform-usa.tvg.com/ussilkshires/20260502cd18381.svg",
+            "freePick": null,
+            "flags": {
+              "horseInFocus": false,
+              "warningHorse": false,
+              "jockeyUplift": false,
+              "trainerUplift": false,
+              "horsesForCoursePos": false,
+              "horsesForCourseNeg": false,
+              "hotTrainer": false,
+              "coldTrainer": false,
+              "highestLastSpeedRating": false,
+              "sectionalFlag": false,
+              "significantImprover": false,
+              "jockeyInForm": false,
+              "clearTopRated": false,
+              "interestingJockeyBooking": false,
+              "firstTimeBlinkers": false,
+              "__typename": "Flags"
+            },
+            "__typename": "RunnerTimeform"
+          },
+          "__typename": "Runner",
+          "ownerName": "Hit The Bid Racing Stable (Hal Mintz) and CMNWLTH (Chase Chamberlin)",
+          "sire": "Uncle Mo",
+          "damSire": "Smart Strike",
+          "dam": "Social Call",
+          "handicapping": {
+            "speedAndClass": {
+              "avgClassRating": 94,
+              "highSpeed": 79,
+              "avgSpeed": 83,
+              "lastClassRating": 93,
+              "avgDistance": 79,
+              "__typename": "SpeedAndClass"
+            },
+            "averagePace": {
+              "finish": 4.4,
+              "numRaces": 5,
+              "middle": 4.4,
+              "early": 4.1,
+              "__typename": "AveragePace"
+            },
+            "jockeyTrainer": {
+              "places": 6,
+              "jockeyName": "Franco Manuel",
+              "trainerName": "Motion H. G",
+              "shows": 4,
+              "wins": 2,
+              "starts": 26,
+              "__typename": "JockeyTrainer"
+            },
+            "snapshot": {
+              "powerRating": 94.5,
+              "daysOff": 19,
+              "horseWins": 0,
+              "horseStarts": 3,
+              "__typename": "Snapshot"
+            },
+            "pastResults": {
+              "totalNumberOfStarts": 11,
+              "numberOfFirstPlace": 3,
+              "numberOfSecondPlace": 1,
+              "numberOfThirdPlace": 0,
+              "winPercentage": 27.27,
+              "winPercentageRanking": null,
+              "top3Percentage": 36.36,
+              "top3PercentageRanking": null,
+              "__typename": "PastResults"
+            },
+            "__typename": "Handicapping",
+            "freePick": {
+              "number": null,
+              "info": null,
+              "__typename": "FreePick"
+            }
+          }
+        }
+      ],
+      "__typename": "BettingInterest"
+    },
+    {
+      "biNumber": 2,
+      "favorite": false,
+      "currentOdds": {
+        "numerator": 4,
+        "denominator": null,
+        "__typename": "Odd"
+      },
+      "morningLineOdds": {
+        "numerator": 5,
+        "denominator": 2,
+        "__typename": "Odd"
+      },
+      "recentOdds": [
+        {
+          "trending": null,
+          "odd": "4",
+          "__typename": "RecentOdd"
+        }
+      ],
+      "biPools": [
+        {
+          "wagerType": {
+            "id": 310,
+            "code": "DB",
+            "name": "Daily Double",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 11039,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1753,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 298,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1131,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1052,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 10804,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1735,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1812,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 479,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 509,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 205,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 110,
+            "code": "EX",
+            "name": "Exacta",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 13208,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 72386,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 18707,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 39135,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 5115,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 30698,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 53025,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 19227,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 20,
+            "code": "PL",
+            "name": "Place",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 102014,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 30,
+            "code": "SH",
+            "name": "Show",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 120411,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 10,
+            "code": "WN",
+            "name": "Win",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 278763,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        }
+      ],
+      "runners": [
+        {
+          "runnerId": "2",
+          "scratched": false,
+          "jockey": "Gaffalione Tyler",
+          "trainer": "Walsh Brendan P",
+          "horseName": "Sweet Rebecca",
+          "hasJockeyChanges": false,
+          "timeform": {
+            "analystsComments": "Winner last time out at Gulfstream Park 5 weeks ago. Thriving at present after winning last two races.",
+            "silkUrl": "https://timeform-usa.tvg.com/ussilks/20260502cd18382.png",
+            "silkUrlSvg": "https://timeform-usa.tvg.com/ussilkshires/20260502cd18382.svg",
+            "freePick": null,
+            "flags": {
+              "horseInFocus": false,
+              "warningHorse": false,
+              "jockeyUplift": false,
+              "trainerUplift": false,
+              "horsesForCoursePos": false,
+              "horsesForCourseNeg": false,
+              "hotTrainer": true,
+              "coldTrainer": false,
+              "highestLastSpeedRating": false,
+              "sectionalFlag": false,
+              "significantImprover": false,
+              "jockeyInForm": false,
+              "clearTopRated": false,
+              "interestingJockeyBooking": false,
+              "firstTimeBlinkers": false,
+              "__typename": "Flags"
+            },
+            "__typename": "RunnerTimeform"
+          },
+          "__typename": "Runner",
+          "ownerName": "Resolute Racing (John Stewart)",
+          "sire": "American Pharoah",
+          "damSire": "Discreet Cat",
+          "dam": "Sweet N Discreet",
+          "handicapping": {
+            "speedAndClass": {
+              "avgClassRating": 99,
+              "highSpeed": 108,
+              "avgSpeed": 99,
+              "lastClassRating": 104,
+              "avgDistance": 99,
+              "__typename": "SpeedAndClass"
+            },
+            "averagePace": {
+              "finish": 3,
+              "numRaces": 4,
+              "middle": 3.4,
+              "early": 2.4,
+              "__typename": "AveragePace"
+            },
+            "jockeyTrainer": {
+              "places": 35,
+              "jockeyName": "Gaffalione Tyler",
+              "trainerName": "Walsh Brendan P",
+              "shows": 25,
+              "wins": 42,
+              "starts": 193,
+              "__typename": "JockeyTrainer"
+            },
+            "snapshot": {
+              "powerRating": 107.4,
+              "daysOff": 34,
+              "horseWins": 5,
+              "horseStarts": 8,
+              "__typename": "Snapshot"
+            },
+            "pastResults": {
+              "totalNumberOfStarts": 8,
+              "numberOfFirstPlace": 5,
+              "numberOfSecondPlace": 0,
+              "numberOfThirdPlace": 0,
+              "winPercentage": 62.5,
+              "winPercentageRanking": "2nd",
+              "top3Percentage": 62.5,
+              "top3PercentageRanking": null,
+              "__typename": "PastResults"
+            },
+            "__typename": "Handicapping",
+            "freePick": {
+              "number": 3,
+              "info": "Sound to invest in a trainer with this kind of exemplary win percentage - 19 percent. Consider in this event if only for the really good Equibase Speed Figure booked in the last affair.",
+              "__typename": "FreePick"
+            }
+          }
+        }
+      ],
+      "__typename": "BettingInterest"
+    },
+    {
+      "biNumber": 3,
+      "favorite": true,
+      "currentOdds": {
+        "numerator": 5,
+        "denominator": 2,
+        "__typename": "Odd"
+      },
+      "morningLineOdds": {
+        "numerator": 4,
+        "denominator": null,
+        "__typename": "Odd"
+      },
+      "recentOdds": [
+        {
+          "trending": true,
+          "odd": "5/2",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": false,
+          "odd": "3",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": true,
+          "odd": "5/2",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": null,
+          "odd": "3",
+          "__typename": "RecentOdd"
+        }
+      ],
+      "biPools": [
+        {
+          "wagerType": {
+            "id": 310,
+            "code": "DB",
+            "name": "Daily Double",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 22949,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1690,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 340,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 2557,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1850,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 28092,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 2414,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 2375,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 742,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 845,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 239,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 110,
+            "code": "EX",
+            "name": "Exacta",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 22650,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 78092,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 36255,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 49029,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 8587,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 35534,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 57759,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 25152,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 20,
+            "code": "PL",
+            "name": "Place",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 112735,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 30,
+            "code": "SH",
+            "name": "Show",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 116859,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 10,
+            "code": "WN",
+            "name": "Win",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 385741,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        }
+      ],
+      "runners": [
+        {
+          "runnerId": "3",
+          "scratched": false,
+          "jockey": "Prat Flavien",
+          "trainer": "Brown Chad C",
+          "horseName": "Portfolio Duration (Gb)",
+          "hasJockeyChanges": false,
+          "timeform": {
+            "analystsComments": "Twice a winner from first 3 appearances. Best effort when getting the better of remainder by 4¾ lengths in allowance at Tampa Bay Downs on latest start. Very hard to make a case for from a form perspective.",
+            "silkUrl": "https://timeform-usa.tvg.com/ussilks/20260502cd18383.png",
+            "silkUrlSvg": "https://timeform-usa.tvg.com/ussilkshires/20260502cd18383.svg",
+            "freePick": null,
+            "flags": {
+              "horseInFocus": false,
+              "warningHorse": false,
+              "jockeyUplift": false,
+              "trainerUplift": false,
+              "horsesForCoursePos": false,
+              "horsesForCourseNeg": false,
+              "hotTrainer": true,
+              "coldTrainer": false,
+              "highestLastSpeedRating": false,
+              "sectionalFlag": false,
+              "significantImprover": false,
+              "jockeyInForm": false,
+              "clearTopRated": false,
+              "interestingJockeyBooking": false,
+              "firstTimeBlinkers": false,
+              "__typename": "Flags"
+            },
+            "__typename": "RunnerTimeform"
+          },
+          "__typename": "Runner",
+          "ownerName": "Klaravich Stables, Inc. (Seth Klarman)",
+          "sire": "Night Of Thunder (Ire)",
+          "damSire": "Dansili (Gb)",
+          "dam": "Shemya (Fr)",
+          "handicapping": {
+            "speedAndClass": {
+              "avgClassRating": 84,
+              "highSpeed": 94,
+              "avgSpeed": 87,
+              "lastClassRating": 95,
+              "avgDistance": 87,
+              "__typename": "SpeedAndClass"
+            },
+            "averagePace": {
+              "finish": 1.3,
+              "numRaces": 3,
+              "middle": 2.6,
+              "early": 4.8,
+              "__typename": "AveragePace"
+            },
+            "jockeyTrainer": {
+              "places": 54,
+              "jockeyName": "Prat Flavien",
+              "trainerName": "Brown Chad C",
+              "shows": 53,
+              "wins": 76,
+              "starts": 294,
+              "__typename": "JockeyTrainer"
+            },
+            "snapshot": {
+              "powerRating": 88.3,
+              "daysOff": 34,
+              "horseWins": 2,
+              "horseStarts": 3,
+              "__typename": "Snapshot"
+            },
+            "pastResults": {
+              "totalNumberOfStarts": 3,
+              "numberOfFirstPlace": 2,
+              "numberOfSecondPlace": 1,
+              "numberOfThirdPlace": 0,
+              "winPercentage": 66.67,
+              "winPercentageRanking": "top",
+              "top3Percentage": 100,
+              "top3PercentageRanking": "top",
+              "__typename": "PastResults"
+            },
+            "__typename": "Handicapping",
+            "freePick": {
+              "number": null,
+              "info": null,
+              "__typename": "FreePick"
+            }
+          }
+        }
+      ],
+      "__typename": "BettingInterest"
+    },
+    {
+      "biNumber": 4,
+      "favorite": false,
+      "currentOdds": {
+        "numerator": 7,
+        "denominator": null,
+        "__typename": "Odd"
+      },
+      "morningLineOdds": {
+        "numerator": 8,
+        "denominator": null,
+        "__typename": "Odd"
+      },
+      "recentOdds": [
+        {
+          "trending": false,
+          "odd": "7",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": null,
+          "odd": "6",
+          "__typename": "RecentOdd"
+        }
+      ],
+      "biPools": [
+        {
+          "wagerType": {
+            "id": 310,
+            "code": "DB",
+            "name": "Daily Double",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 8347,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 927,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 245,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1647,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 831,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 8372,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1315,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1392,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 605,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 450,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 192,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 110,
+            "code": "EX",
+            "name": "Exacta",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 6401,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 17693,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 30185,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 14431,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 3559,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 16067,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 19949,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 6744,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 20,
+            "code": "PL",
+            "name": "Place",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 54378,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 30,
+            "code": "SH",
+            "name": "Show",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 44249,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 10,
+            "code": "WN",
+            "name": "Win",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 173165,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        }
+      ],
+      "runners": [
+        {
+          "runnerId": "4",
+          "scratched": false,
+          "jockey": "Alvarado Junior",
+          "trainer": "Mott William I",
+          "horseName": "Temptable (Gb)",
+          "hasJockeyChanges": false,
+          "timeform": {
+            "analystsComments": "Creditable effort last time out at Del Mar 6 months ago. Begins life with new barn today.",
+            "silkUrl": "https://timeform-usa.tvg.com/ussilks/20260502cd18384.png",
+            "silkUrlSvg": "https://timeform-usa.tvg.com/ussilkshires/20260502cd18384.svg",
+            "freePick": null,
+            "flags": {
+              "horseInFocus": false,
+              "warningHorse": false,
+              "jockeyUplift": false,
+              "trainerUplift": false,
+              "horsesForCoursePos": false,
+              "horsesForCourseNeg": false,
+              "hotTrainer": true,
+              "coldTrainer": false,
+              "highestLastSpeedRating": false,
+              "sectionalFlag": false,
+              "significantImprover": false,
+              "jockeyInForm": false,
+              "clearTopRated": false,
+              "interestingJockeyBooking": false,
+              "firstTimeBlinkers": false,
+              "__typename": "Flags"
+            },
+            "__typename": "RunnerTimeform"
+          },
+          "__typename": "Runner",
+          "ownerName": "Juddmonte (Fahad bin Khalid)",
+          "sire": "Kingman (Gb)",
+          "damSire": "Lope De Vega (Ire)",
+          "dam": "Capla Temptress (Ire)",
+          "handicapping": {
+            "speedAndClass": {
+              "avgClassRating": 98,
+              "highSpeed": 100,
+              "avgSpeed": 97,
+              "lastClassRating": 108,
+              "avgDistance": 100,
+              "__typename": "SpeedAndClass"
+            },
+            "averagePace": {
+              "finish": 5.8,
+              "numRaces": 1,
+              "middle": 7.5,
+              "early": 6.7,
+              "__typename": "AveragePace"
+            },
+            "jockeyTrainer": {
+              "places": 47,
+              "jockeyName": "Alvarado Junior",
+              "trainerName": "Mott William I",
+              "shows": 49,
+              "wins": 65,
+              "starts": 314,
+              "__typename": "JockeyTrainer"
+            },
+            "snapshot": {
+              "powerRating": 88.2,
+              "daysOff": 181,
+              "horseWins": 1,
+              "horseStarts": 4,
+              "__typename": "Snapshot"
+            },
+            "pastResults": {
+              "totalNumberOfStarts": 7,
+              "numberOfFirstPlace": 3,
+              "numberOfSecondPlace": 1,
+              "numberOfThirdPlace": 1,
+              "winPercentage": 42.86,
+              "winPercentageRanking": "3rd",
+              "top3Percentage": 71.43,
+              "top3PercentageRanking": "2nd",
+              "__typename": "PastResults"
+            },
+            "__typename": "Handicapping",
+            "freePick": {
+              "number": null,
+              "info": null,
+              "__typename": "FreePick"
+            }
+          }
+        }
+      ],
+      "__typename": "BettingInterest"
+    },
+    {
+      "biNumber": 5,
+      "favorite": false,
+      "currentOdds": {
+        "numerator": 6,
+        "denominator": null,
+        "__typename": "Odd"
+      },
+      "morningLineOdds": {
+        "numerator": 6,
+        "denominator": null,
+        "__typename": "Odd"
+      },
+      "recentOdds": [
+        {
+          "trending": null,
+          "odd": "6",
+          "__typename": "RecentOdd"
+        }
+      ],
+      "biPools": [
+        {
+          "wagerType": {
+            "id": 310,
+            "code": "DB",
+            "name": "Daily Double",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 8498,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1336,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 209,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1510,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1361,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 8482,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1256,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1567,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 370,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 389,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 140,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 110,
+            "code": "EX",
+            "name": "Exacta",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 10168,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 37670,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 40784,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 15163,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 4190,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 20778,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 36671,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 11659,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 20,
+            "code": "PL",
+            "name": "Place",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 83994,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 30,
+            "code": "SH",
+            "name": "Show",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 70936,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 10,
+            "code": "WN",
+            "name": "Win",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 204709,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        }
+      ],
+      "runners": [
+        {
+          "runnerId": "5",
+          "scratched": false,
+          "jockey": "Velazquez John R",
+          "trainer": "Casse Mark E",
+          "horseName": "Classic Q",
+          "hasJockeyChanges": false,
+          "timeform": {
+            "analystsComments": "Runner-up last time out at Gulfstream Park 9 weeks ago. Rider aboard has a record second to none in the big races. Good chance and well worth place in this.",
+            "silkUrl": "https://timeform-usa.tvg.com/ussilks/20260502cd18385.png",
+            "silkUrlSvg": "https://timeform-usa.tvg.com/ussilkshires/20260502cd18385.svg",
+            "freePick": {
+              "number": 2,
+              "info": "Runner-up last time out at Gulfstream Park 9 weeks ago. Rider aboard has a record second to none in the big races. Good chance and well worth place in this.",
+              "__typename": "TimeformFreePick"
+            },
+            "flags": {
+              "horseInFocus": false,
+              "warningHorse": false,
+              "jockeyUplift": false,
+              "trainerUplift": false,
+              "horsesForCoursePos": false,
+              "horsesForCourseNeg": false,
+              "hotTrainer": false,
+              "coldTrainer": false,
+              "highestLastSpeedRating": false,
+              "sectionalFlag": false,
+              "significantImprover": false,
+              "jockeyInForm": false,
+              "clearTopRated": false,
+              "interestingJockeyBooking": false,
+              "firstTimeBlinkers": false,
+              "__typename": "Flags"
+            },
+            "__typename": "RunnerTimeform"
+          },
+          "__typename": "Runner",
+          "ownerName": "Gary Barber, Blue Crevalle Racing (Hugh Dailey) and Eclipse Thoroughbred Partner",
+          "sire": "Classic Empire",
+          "damSire": "Scat Daddy",
+          "dam": "Lovely Em",
+          "handicapping": {
+            "speedAndClass": {
+              "avgClassRating": 103,
+              "highSpeed": 111,
+              "avgSpeed": 100,
+              "lastClassRating": 112,
+              "avgDistance": 100,
+              "__typename": "SpeedAndClass"
+            },
+            "averagePace": {
+              "finish": 3.4,
+              "numRaces": 10,
+              "middle": 3,
+              "early": 3.5,
+              "__typename": "AveragePace"
+            },
+            "jockeyTrainer": {
+              "places": 4,
+              "jockeyName": "Velazquez John R",
+              "trainerName": "Casse Mark E",
+              "shows": 4,
+              "wins": 5,
+              "starts": 32,
+              "__typename": "JockeyTrainer"
+            },
+            "snapshot": {
+              "powerRating": 107.6,
+              "daysOff": 62,
+              "horseWins": 3,
+              "horseStarts": 11,
+              "__typename": "Snapshot"
+            },
+            "pastResults": {
+              "totalNumberOfStarts": 13,
+              "numberOfFirstPlace": 3,
+              "numberOfSecondPlace": 3,
+              "numberOfThirdPlace": 1,
+              "winPercentage": 23.08,
+              "winPercentageRanking": null,
+              "top3Percentage": 53.85,
+              "top3PercentageRanking": null,
+              "__typename": "PastResults"
+            },
+            "__typename": "Handicapping",
+            "freePick": {
+              "number": 2,
+              "info": "Consider in this one if only for the exemplary speed fig booked in the last contest. Formidable selection to take this race going in a turf route.",
+              "__typename": "FreePick"
+            }
+          }
+        }
+      ],
+      "__typename": "BettingInterest"
+    },
+    {
+      "biNumber": 6,
+      "favorite": false,
+      "currentOdds": {
+        "numerator": 30,
+        "denominator": null,
+        "__typename": "Odd"
+      },
+      "morningLineOdds": {
+        "numerator": 20,
+        "denominator": null,
+        "__typename": "Odd"
+      },
+      "recentOdds": [
+        {
+          "trending": false,
+          "odd": "30",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": false,
+          "odd": "29",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": true,
+          "odd": "28",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": false,
+          "odd": "29",
+          "__typename": "RecentOdd"
+        }
+      ],
+      "biPools": [
+        {
+          "wagerType": {
+            "id": 310,
+            "code": "DB",
+            "name": "Daily Double",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 1451,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 173,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 122,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 415,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 338,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 2267,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 233,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 372,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 151,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 130,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 56,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 110,
+            "code": "EX",
+            "name": "Exacta",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 3537,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 3682,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 4806,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 2988,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 3204,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 2881,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 4074,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 2427,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 20,
+            "code": "PL",
+            "name": "Place",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 19946,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 30,
+            "code": "SH",
+            "name": "Show",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 23782,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 10,
+            "code": "WN",
+            "name": "Win",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 46375,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        }
+      ],
+      "runners": [
+        {
+          "runnerId": "6",
+          "scratched": false,
+          "jockey": "Beschizza Adam",
+          "trainer": "Sisterson Jack",
+          "horseName": "Vina Arana (Ire)",
+          "hasJockeyChanges": false,
+          "timeform": {
+            "analystsComments": "Career best last time out at Keeneland 22 days ago. Plenty to find on the figures.",
+            "silkUrl": "https://timeform-usa.tvg.com/ussilks/20260502cd18386.png",
+            "silkUrlSvg": "https://timeform-usa.tvg.com/ussilkshires/20260502cd18386.svg",
+            "freePick": null,
+            "flags": {
+              "horseInFocus": false,
+              "warningHorse": false,
+              "jockeyUplift": false,
+              "trainerUplift": false,
+              "horsesForCoursePos": false,
+              "horsesForCourseNeg": false,
+              "hotTrainer": false,
+              "coldTrainer": false,
+              "highestLastSpeedRating": false,
+              "sectionalFlag": false,
+              "significantImprover": false,
+              "jockeyInForm": false,
+              "clearTopRated": false,
+              "interestingJockeyBooking": false,
+              "firstTimeBlinkers": false,
+              "__typename": "Flags"
+            },
+            "__typename": "RunnerTimeform"
+          },
+          "__typename": "Runner",
+          "ownerName": "Sterling Stables, LLC (Kevin Bogart) and MHM Stables, LLC (Matthew Mazzuchi)",
+          "sire": "Make Believe (Gb)",
+          "damSire": "Teofilo (Ire)",
+          "dam": "Sunset Dazzle (Ire)",
+          "handicapping": {
+            "speedAndClass": {
+              "avgClassRating": 102,
+              "highSpeed": 99,
+              "avgSpeed": 92,
+              "lastClassRating": 108,
+              "avgDistance": 99,
+              "__typename": "SpeedAndClass"
+            },
+            "averagePace": {
+              "finish": 3,
+              "numRaces": 3,
+              "middle": 5.1,
+              "early": 6,
+              "__typename": "AveragePace"
+            },
+            "jockeyTrainer": {
+              "places": 2,
+              "jockeyName": "Beschizza Adam",
+              "trainerName": "Sisterson Jack",
+              "shows": 1,
+              "wins": 1,
+              "starts": 11,
+              "__typename": "JockeyTrainer"
+            },
+            "snapshot": {
+              "powerRating": 90.7,
+              "daysOff": 21,
+              "horseWins": 2,
+              "horseStarts": 5,
+              "__typename": "Snapshot"
+            },
+            "pastResults": {
+              "totalNumberOfStarts": 9,
+              "numberOfFirstPlace": 2,
+              "numberOfSecondPlace": 0,
+              "numberOfThirdPlace": 2,
+              "winPercentage": 22.22,
+              "winPercentageRanking": null,
+              "top3Percentage": 44.44,
+              "top3PercentageRanking": null,
+              "__typename": "PastResults"
+            },
+            "__typename": "Handicapping",
+            "freePick": {
+              "number": null,
+              "info": null,
+              "__typename": "FreePick"
+            }
+          }
+        }
+      ],
+      "__typename": "BettingInterest"
+    },
+    {
+      "biNumber": 7,
+      "favorite": false,
+      "currentOdds": {
+        "numerator": 6,
+        "denominator": null,
+        "__typename": "Odd"
+      },
+      "morningLineOdds": {
+        "numerator": 12,
+        "denominator": null,
+        "__typename": "Odd"
+      },
+      "recentOdds": [
+        {
+          "trending": null,
+          "odd": "6",
+          "__typename": "RecentOdd"
+        }
+      ],
+      "biPools": [
+        {
+          "wagerType": {
+            "id": 310,
+            "code": "DB",
+            "name": "Daily Double",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 5384,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 870,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 236,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1340,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1107,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 8277,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1327,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1249,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 416,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 661,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 218,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 110,
+            "code": "EX",
+            "name": "Exacta",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 8354,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 27778,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 27581,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 13990,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 19905,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 3427,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 27432,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 13084,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 20,
+            "code": "PL",
+            "name": "Place",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 75701,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 30,
+            "code": "SH",
+            "name": "Show",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 84354,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 10,
+            "code": "WN",
+            "name": "Win",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 187750,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        }
+      ],
+      "runners": [
+        {
+          "runnerId": "7",
+          "scratched": false,
+          "jockey": "Ortiz Jose L",
+          "trainer": "Joseph, Jr. Saffie A",
+          "horseName": "Movin' On Up",
+          "hasJockeyChanges": false,
+          "timeform": {
+            "analystsComments": "Third last time out at Keeneland 20 days ago. Put in a good piece of work the other day.",
+            "silkUrl": "https://timeform-usa.tvg.com/ussilks/20260502cd18387.png",
+            "silkUrlSvg": "https://timeform-usa.tvg.com/ussilkshires/20260502cd18387.svg",
+            "freePick": {
+              "number": 3,
+              "info": "Third last time out at Keeneland 20 days ago. Put in a good piece of work the other day.",
+              "__typename": "TimeformFreePick"
+            },
+            "flags": {
+              "horseInFocus": false,
+              "warningHorse": false,
+              "jockeyUplift": false,
+              "trainerUplift": false,
+              "horsesForCoursePos": false,
+              "horsesForCourseNeg": false,
+              "hotTrainer": true,
+              "coldTrainer": false,
+              "highestLastSpeedRating": false,
+              "sectionalFlag": false,
+              "significantImprover": false,
+              "jockeyInForm": false,
+              "clearTopRated": false,
+              "interestingJockeyBooking": false,
+              "firstTimeBlinkers": false,
+              "__typename": "Flags"
+            },
+            "__typename": "RunnerTimeform"
+          },
+          "__typename": "Runner",
+          "ownerName": "Kenneth L. Ramsey",
+          "sire": "Accelerate",
+          "damSire": "Cairo Prince",
+          "dam": "Stifle Yourself",
+          "handicapping": {
+            "speedAndClass": {
+              "avgClassRating": 107,
+              "highSpeed": 114,
+              "avgSpeed": 105,
+              "lastClassRating": 112,
+              "avgDistance": 104,
+              "__typename": "SpeedAndClass"
+            },
+            "averagePace": {
+              "finish": 3.2,
+              "numRaces": 10,
+              "middle": 3.6,
+              "early": 3.6,
+              "__typename": "AveragePace"
+            },
+            "jockeyTrainer": {
+              "places": 8,
+              "jockeyName": "Ortiz Jose L",
+              "trainerName": "Joseph, Jr. Saffie A",
+              "shows": 4,
+              "wins": 6,
+              "starts": 35,
+              "__typename": "JockeyTrainer"
+            },
+            "snapshot": {
+              "powerRating": 106.4,
+              "daysOff": 19,
+              "horseWins": 3,
+              "horseStarts": 11,
+              "__typename": "Snapshot"
+            },
+            "pastResults": {
+              "totalNumberOfStarts": 18,
+              "numberOfFirstPlace": 5,
+              "numberOfSecondPlace": 2,
+              "numberOfThirdPlace": 5,
+              "winPercentage": 27.78,
+              "winPercentageRanking": null,
+              "top3Percentage": 66.67,
+              "top3PercentageRanking": "3rd",
+              "__typename": "PastResults"
+            },
+            "__typename": "Handicapping",
+            "freePick": {
+              "number": null,
+              "info": null,
+              "__typename": "FreePick"
+            }
+          }
+        }
+      ],
+      "__typename": "BettingInterest"
+    },
+    {
+      "biNumber": 8,
+      "favorite": false,
+      "currentOdds": {
+        "numerator": 4,
+        "denominator": null,
+        "__typename": "Odd"
+      },
+      "morningLineOdds": {
+        "numerator": 7,
+        "denominator": 2,
+        "__typename": "Odd"
+      },
+      "recentOdds": [
+        {
+          "trending": true,
+          "odd": "4",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": false,
+          "odd": "9/2",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": true,
+          "odd": "4",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": null,
+          "odd": "9/2",
+          "__typename": "RecentOdd"
+        }
+      ],
+      "biPools": [
+        {
+          "wagerType": {
+            "id": 310,
+            "code": "DB",
+            "name": "Daily Double",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 14154,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1927,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 292,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 2308,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1502,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 13187,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 2276,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 2435,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 509,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 528,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 257,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 110,
+            "code": "EX",
+            "name": "Exacta",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 13156,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 53179,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 52507,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 22104,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 38619,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 5615,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 29111,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 14909,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 20,
+            "code": "PL",
+            "name": "Place",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 100601,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 30,
+            "code": "SH",
+            "name": "Show",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 93068,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 10,
+            "code": "WN",
+            "name": "Win",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 268906,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        }
+      ],
+      "runners": [
+        {
+          "runnerId": "8",
+          "scratched": false,
+          "jockey": "Hernandez Juan J",
+          "trainer": "Maker Michael J",
+          "horseName": "Pin Up Betty",
+          "hasJockeyChanges": false,
+          "timeform": {
+            "analystsComments": "Creditable effort last time out at Keeneland 21 days ago. Not easy to deny chance on form ratings.",
+            "silkUrl": "https://timeform-usa.tvg.com/ussilks/20260502cd18388.png",
+            "silkUrlSvg": "https://timeform-usa.tvg.com/ussilkshires/20260502cd18388.svg",
+            "freePick": {
+              "number": 1,
+              "info": "Creditable effort last time out at Keeneland 21 days ago. Not easy to deny chance on form ratings.",
+              "__typename": "TimeformFreePick"
+            },
+            "flags": {
+              "horseInFocus": false,
+              "warningHorse": false,
+              "jockeyUplift": false,
+              "trainerUplift": false,
+              "horsesForCoursePos": false,
+              "horsesForCourseNeg": false,
+              "hotTrainer": true,
+              "coldTrainer": false,
+              "highestLastSpeedRating": true,
+              "sectionalFlag": false,
+              "significantImprover": false,
+              "jockeyInForm": false,
+              "clearTopRated": false,
+              "interestingJockeyBooking": false,
+              "firstTimeBlinkers": false,
+              "__typename": "Flags"
+            },
+            "__typename": "RunnerTimeform"
+          },
+          "__typename": "Runner",
+          "ownerName": "Three Diamonds Farm (Kirk Wycoff)",
+          "sire": "Constitution",
+          "damSire": "Into Mischief",
+          "dam": "I'm Betty G",
+          "handicapping": {
+            "speedAndClass": {
+              "avgClassRating": 109,
+              "highSpeed": 112,
+              "avgSpeed": 105,
+              "lastClassRating": 107,
+              "avgDistance": 104,
+              "__typename": "SpeedAndClass"
+            },
+            "averagePace": {
+              "finish": 3.6,
+              "numRaces": 8,
+              "middle": 4.6,
+              "early": 5.2,
+              "__typename": "AveragePace"
+            },
+            "jockeyTrainer": {
+              "places": 3,
+              "jockeyName": "Hernandez Juan J",
+              "trainerName": "Maker Michael J",
+              "shows": 1,
+              "wins": 0,
+              "starts": 10,
+              "__typename": "JockeyTrainer"
+            },
+            "snapshot": {
+              "powerRating": 107.9,
+              "daysOff": 20,
+              "horseWins": 4,
+              "horseStarts": 15,
+              "__typename": "Snapshot"
+            },
+            "pastResults": {
+              "totalNumberOfStarts": 21,
+              "numberOfFirstPlace": 4,
+              "numberOfSecondPlace": 6,
+              "numberOfThirdPlace": 1,
+              "winPercentage": 19.05,
+              "winPercentageRanking": null,
+              "top3Percentage": 52.38,
+              "top3PercentageRanking": null,
+              "__typename": "PastResults"
+            },
+            "__typename": "Handicapping",
+            "freePick": {
+              "number": 1,
+              "info": "Must be looked at given the class of races run lately. She has recorded formidable figures under today's conditions.",
+              "__typename": "FreePick"
+            }
+          }
+        }
+      ],
+      "__typename": "BettingInterest"
+    },
+    {
+      "biNumber": 9,
+      "favorite": false,
+      "currentOdds": {
+        "numerator": 11,
+        "denominator": null,
+        "__typename": "Odd"
+      },
+      "morningLineOdds": {
+        "numerator": 8,
+        "denominator": null,
+        "__typename": "Odd"
+      },
+      "recentOdds": [
+        {
+          "trending": false,
+          "odd": "11",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": true,
+          "odd": "10",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": false,
+          "odd": "11",
+          "__typename": "RecentOdd"
+        },
+        {
+          "trending": true,
+          "odd": "10",
+          "__typename": "RecentOdd"
+        }
+      ],
+      "biPools": [
+        {
+          "wagerType": {
+            "id": 310,
+            "code": "DB",
+            "name": "Daily Double",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 2726,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 583,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 115,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 577,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 565,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 3373,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 593,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 1091,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 259,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 224,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 82,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 110,
+            "code": "EX",
+            "name": "Exacta",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 4269,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 16185,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 18384,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 6442,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 10405,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 2702,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 12526,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 12674,
+              "__typename": "BiPoolData"
+            },
+            {
+              "amount": 0,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 20,
+            "code": "PL",
+            "name": "Place",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 48746,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 30,
+            "code": "SH",
+            "name": "Show",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 51411,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        },
+        {
+          "wagerType": {
+            "id": 10,
+            "code": "WN",
+            "name": "Win",
+            "__typename": "WagerGroupEnumeration"
+          },
+          "poolRunnersData": [
+            {
+              "amount": 118290,
+              "__typename": "BiPoolData"
+            }
+          ],
+          "__typename": "BiPoolType"
+        }
+      ],
+      "runners": [
+        {
+          "runnerId": "9",
+          "scratched": false,
+          "jockey": "Ortiz, Jr. Irad",
+          "trainer": "Brown Chad C",
+          "horseName": "Maggie Go (Arg)",
+          "hasJockeyChanges": false,
+          "timeform": {
+            "analystsComments": "Third last time out at Gulfstream Park 5 weeks ago. Easy to look elsewhere.",
+            "silkUrl": "https://timeform-usa.tvg.com/ussilks/20260502cd18389.png",
+            "silkUrlSvg": "https://timeform-usa.tvg.com/ussilkshires/20260502cd18389.svg",
+            "freePick": null,
+            "flags": {
+              "horseInFocus": false,
+              "warningHorse": false,
+              "jockeyUplift": false,
+              "trainerUplift": false,
+              "horsesForCoursePos": false,
+              "horsesForCourseNeg": false,
+              "hotTrainer": true,
+              "coldTrainer": false,
+              "highestLastSpeedRating": false,
+              "sectionalFlag": false,
+              "significantImprover": false,
+              "jockeyInForm": false,
+              "clearTopRated": false,
+              "interestingJockeyBooking": false,
+              "firstTimeBlinkers": false,
+              "__typename": "Flags"
+            },
+            "__typename": "RunnerTimeform"
+          },
+          "__typename": "Runner",
+          "ownerName": "Michael Dubb, Andrew Rosen, John D. Stuart and Michael J. Caruso",
+          "sire": "Winning Prize (Arg)",
+          "damSire": "Jump Start",
+          "dam": "Astrologa Surena (Arg)",
+          "handicapping": {
+            "speedAndClass": {
+              "avgClassRating": 99,
+              "highSpeed": 106,
+              "avgSpeed": 91,
+              "lastClassRating": 104,
+              "avgDistance": 94,
+              "__typename": "SpeedAndClass"
+            },
+            "averagePace": {
+              "finish": 3.6,
+              "numRaces": 4,
+              "middle": 5.9,
+              "early": 5.6,
+              "__typename": "AveragePace"
+            },
+            "jockeyTrainer": {
+              "places": 7,
+              "jockeyName": "Ortiz, Jr. Irad",
+              "trainerName": "Brown Chad C",
+              "shows": 5,
+              "wins": 13,
+              "starts": 49,
+              "__typename": "JockeyTrainer"
+            },
+            "snapshot": {
+              "powerRating": 94.7,
+              "daysOff": 34,
+              "horseWins": 1,
+              "horseStarts": 6,
+              "__typename": "Snapshot"
+            },
+            "pastResults": {
+              "totalNumberOfStarts": 6,
+              "numberOfFirstPlace": 1,
+              "numberOfSecondPlace": 2,
+              "numberOfThirdPlace": 1,
+              "winPercentage": 16.67,
+              "winPercentageRanking": null,
+              "top3Percentage": 66.67,
+              "top3PercentageRanking": "3rd",
+              "__typename": "PastResults"
+            },
+            "__typename": "Handicapping",
+            "freePick": {
+              "number": null,
+              "info": null,
+              "__typename": "FreePick"
+            }
+          }
+        }
+      ],
+      "__typename": "BettingInterest"
+    }
+  ],
+  "probables": [
+    {
+      "amount": 242107,
+      "minWagerAmount": 1,
+      "wagerType": {
+        "id": 310,
+        "code": "DB",
+        "name": "Daily Double",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "betCombos": [
+        {
+          "runner1": "1",
+          "runner2": "1",
+          "payout": "30.29",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "2",
+          "payout": "254.97",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "3",
+          "payout": "841.51",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "4",
+          "payout": "239.39",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "5",
+          "payout": "87.88",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "6",
+          "payout": "21.57",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "7",
+          "payout": "271.62",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "8",
+          "payout": "221.71",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "9",
+          "payout": "710.95",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "10",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "11",
+          "payout": "390.66",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "12",
+          "payout": "876.3",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "1",
+          "payout": "17.1",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "2",
+          "payout": "107.72",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "3",
+          "payout": "631.83",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "4",
+          "payout": "166.93",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "5",
+          "payout": "179.51",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "6",
+          "payout": "17.48",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "7",
+          "payout": "108.83",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "8",
+          "payout": "104.19",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "9",
+          "payout": "394.19",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "10",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "11",
+          "payout": "371.05",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "12",
+          "payout": "917.11",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "1",
+          "payout": "8.23",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "2",
+          "payout": "111.73",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "3",
+          "payout": "553.97",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "4",
+          "payout": "73.85",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "5",
+          "payout": "102.08",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "6",
+          "payout": "6.72",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "7",
+          "payout": "78.24",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "8",
+          "payout": "79.51",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "9",
+          "payout": "254.4",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "10",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "11",
+          "payout": "223.49",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "12",
+          "payout": "788.71",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "1",
+          "payout": "22.62",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "2",
+          "payout": "203.66",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "3",
+          "payout": "768.75",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "4",
+          "payout": "114.64",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "5",
+          "payout": "227.18",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "6",
+          "payout": "22.55",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "7",
+          "payout": "143.6",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "8",
+          "payout": "135.63",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "9",
+          "payout": "311.76",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "10",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "11",
+          "payout": "419.68",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "12",
+          "payout": "980.2",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "1",
+          "payout": "22.22",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "2",
+          "payout": "141.37",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "3",
+          "payout": "900.57",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "4",
+          "payout": "125.01",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "5",
+          "payout": "138.76",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "6",
+          "payout": "22.26",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "7",
+          "payout": "150.34",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "8",
+          "payout": "120.53",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "9",
+          "payout": "509.58",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "10",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "11",
+          "payout": "484.76",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "12",
+          "payout": "1342.12",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "1",
+          "payout": "130.1",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "2",
+          "payout": "1087.42",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "3",
+          "payout": "1538.96",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "4",
+          "payout": "454.08",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "5",
+          "payout": "558.3",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "6",
+          "payout": "83.31",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "7",
+          "payout": "808.98",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "8",
+          "payout": "506.79",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "9",
+          "payout": "1246.92",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "10",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "11",
+          "payout": "1448.33",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "12",
+          "payout": "3329.37",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "1",
+          "payout": "35.07",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "2",
+          "payout": "217.08",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "3",
+          "payout": "799.67",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "4",
+          "payout": "140.95",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "5",
+          "payout": "170.48",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "6",
+          "payout": "22.81",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "7",
+          "payout": "142.3",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "8",
+          "payout": "151.16",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "9",
+          "payout": "453.58",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "10",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "11",
+          "payout": "285.38",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "12",
+          "payout": "865.54",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "1",
+          "payout": "13.34",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "2",
+          "payout": "98.01",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "3",
+          "payout": "646.35",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "4",
+          "payout": "81.83",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "5",
+          "payout": "125.74",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "6",
+          "payout": "14.32",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "7",
+          "payout": "82.97",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "8",
+          "payout": "77.56",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "9",
+          "payout": "370.75",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "10",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "11",
+          "payout": "357.37",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "12",
+          "payout": "732.23",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "1",
+          "payout": "69.27",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "2",
+          "payout": "323.7",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "3",
+          "payout": "1639.67",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "4",
+          "payout": "327.03",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "5",
+          "payout": "334.2",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "6",
+          "payout": "55.99",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "7",
+          "payout": "318.12",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "8",
+          "payout": "173.09",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "9",
+          "payout": "728.93",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "10",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "11",
+          "payout": "841.27",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "12",
+          "payout": "2297.28",
+          "__typename": "BetCombo"
+        }
+      ],
+      "__typename": "RaceProbableType"
+    },
+    {
+      "amount": 1408682,
+      "minWagerAmount": 1,
+      "wagerType": {
+        "id": 110,
+        "code": "EX",
+        "name": "Exacta",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "betCombos": [
+        {
+          "runner1": "1",
+          "runner2": "1",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "2",
+          "payout": "95.83",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "3",
+          "payout": "67.76",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "4",
+          "payout": "188.69",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "5",
+          "payout": "114.37",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "6",
+          "payout": "296.83",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "7",
+          "payout": "137.68",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "8",
+          "payout": "98.52",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "9",
+          "payout": "265.93",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "1",
+          "payout": "83.18",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "2",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "3",
+          "payout": "15.17",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "4",
+          "payout": "58.73",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "5",
+          "payout": "28.07",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "6",
+          "payout": "214.8",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "7",
+          "payout": "35.79",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "8",
+          "payout": "20.72",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "9",
+          "payout": "57.14",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "1",
+          "payout": "48.51",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "2",
+          "payout": "14.07",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "3",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "4",
+          "payout": "30.3",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "5",
+          "payout": "22.41",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "6",
+          "payout": "127.95",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "7",
+          "payout": "30.92",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "8",
+          "payout": "19.02",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": "9",
+          "payout": "43.68",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "1",
+          "payout": "171.63",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "2",
+          "payout": "62.1",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "3",
+          "payout": "36.4",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "4",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "5",
+          "payout": "76.14",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "6",
+          "payout": "308.73",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "7",
+          "payout": "68.38",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "8",
+          "payout": "55.07",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": "9",
+          "payout": "162.91",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "1",
+          "payout": "108.07",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "2",
+          "payout": "29.16",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "3",
+          "payout": "26.94",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "4",
+          "payout": "72.46",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "5",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "6",
+          "payout": "262.23",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "7",
+          "payout": "52.88",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "8",
+          "payout": "29.96",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": "9",
+          "payout": "94.24",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "1",
+          "payout": "310.57",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "2",
+          "payout": "298.41",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "3",
+          "payout": "228.61",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "4",
+          "payout": "367.62",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "5",
+          "payout": "342.87",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "6",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "7",
+          "payout": "381.28",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "8",
+          "payout": "269.66",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": "9",
+          "payout": "452.68",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "1",
+          "payout": "131.52",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "2",
+          "payout": "39.55",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "3",
+          "payout": "39.83",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "4",
+          "payout": "78.54",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "5",
+          "payout": "55.2",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "6",
+          "payout": "320.58",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "7",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "8",
+          "payout": "40.05",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": "9",
+          "payout": "83.97",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "1",
+          "payout": "83.51",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "2",
+          "payout": "20.66",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "3",
+          "payout": "20.92",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "4",
+          "payout": "49.7",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "5",
+          "payout": "28.45",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "6",
+          "payout": "195.66",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "7",
+          "payout": "37.74",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "8",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": "9",
+          "payout": "73.69",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "1",
+          "payout": "257.37",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "2",
+          "payout": "67.88",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "3",
+          "payout": "59.76",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "4",
+          "payout": "170.54",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "5",
+          "payout": "105.59",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "6",
+          "payout": "406.56",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "7",
+          "payout": "87.71",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "8",
+          "payout": "86.69",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": "9",
+          "payout": "0.0",
+          "__typename": "BetCombo"
+        }
+      ],
+      "__typename": "RaceProbableType"
+    },
+    {
+      "amount": 635131,
+      "minWagerAmount": 2,
+      "wagerType": {
+        "id": 20,
+        "code": "PL",
+        "name": "Place",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "betCombos": [
+        {
+          "runner1": "1",
+          "runner2": "1",
+          "payout": "12.11",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "2",
+          "payout": "5.03",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "3",
+          "payout": "4.74",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "4",
+          "payout": "8.56",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "5",
+          "payout": "5.9",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "6",
+          "payout": "21.61",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "7",
+          "payout": "6.43",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "8",
+          "payout": "5.09",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "9",
+          "payout": "9.44",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "1",
+          "payout": "14.61",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "2",
+          "payout": "5.94",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "3",
+          "payout": "5.47",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "4",
+          "payout": "10.27",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "5",
+          "payout": "7.0",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "6",
+          "payout": "25.41",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "7",
+          "payout": "7.66",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "8",
+          "payout": "6.01",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "9",
+          "payout": "11.34",
+          "__typename": "BetCombo"
+        }
+      ],
+      "__typename": "RaceProbableType"
+    },
+    {
+      "amount": 638051,
+      "minWagerAmount": 2,
+      "wagerType": {
+        "id": 30,
+        "code": "SH",
+        "name": "Show",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "betCombos": [
+        {
+          "runner1": "1",
+          "runner2": "1",
+          "payout": "7.18",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "2",
+          "payout": "3.09",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "3",
+          "payout": "3.12",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "4",
+          "payout": "5.69",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "5",
+          "payout": "4.05",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "6",
+          "payout": "9.44",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "7",
+          "payout": "3.62",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "8",
+          "payout": "3.4",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "1",
+          "runner2": "9",
+          "payout": "5.08",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "1",
+          "payout": "10.6",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "2",
+          "payout": "3.93",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "3",
+          "payout": "4.01",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "4",
+          "payout": "8.41",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "5",
+          "payout": "5.75",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "6",
+          "payout": "13.92",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "7",
+          "payout": "5.04",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "8",
+          "payout": "4.7",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": "9",
+          "payout": "7.42",
+          "__typename": "BetCombo"
+        }
+      ],
+      "__typename": "RaceProbableType"
+    },
+    {
+      "amount": 1759777,
+      "minWagerAmount": 2,
+      "wagerType": {
+        "id": 10,
+        "code": "WN",
+        "name": "Win",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "betCombos": [
+        {
+          "runner1": "1",
+          "runner2": null,
+          "payout": "30.22",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "2",
+          "runner2": null,
+          "payout": "10.4",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "3",
+          "runner2": null,
+          "payout": "7.52",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "4",
+          "runner2": null,
+          "payout": "16.76",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "5",
+          "runner2": null,
+          "payout": "14.18",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "6",
+          "runner2": null,
+          "payout": "62.6",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "7",
+          "runner2": null,
+          "payout": "15.46",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "8",
+          "runner2": null,
+          "payout": "10.78",
+          "__typename": "BetCombo"
+        },
+        {
+          "runner1": "9",
+          "runner2": null,
+          "payout": "24.54",
+          "__typename": "BetCombo"
+        }
+      ],
+      "__typename": "RaceProbableType"
+    }
+  ],
+  "racePools": [
+    {
+      "wagerType": {
+        "id": 310,
+        "code": "DB",
+        "name": "Daily Double",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "amount": 242107,
+      "__typename": "PoolType"
+    },
+    {
+      "wagerType": {
+        "id": 110,
+        "code": "EX",
+        "name": "Exacta",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "amount": 1408682,
+      "__typename": "PoolType"
+    },
+    {
+      "wagerType": {
+        "id": 330,
+        "code": "P3",
+        "name": "Pick 3",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "amount": 330725.02,
+      "__typename": "PoolType"
+    },
+    {
+      "wagerType": {
+        "id": 360,
+        "code": "P6",
+        "name": "Pick 6",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "amount": 1647794.9,
+      "__typename": "PoolType"
+    },
+    {
+      "wagerType": {
+        "id": 20,
+        "code": "PL",
+        "name": "Place",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "amount": 635131,
+      "__typename": "PoolType"
+    },
+    {
+      "wagerType": {
+        "id": 30,
+        "code": "SH",
+        "name": "Show",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "amount": 638051,
+      "__typename": "PoolType"
+    },
+    {
+      "wagerType": {
+        "id": 210,
+        "code": "SU",
+        "name": "Superfecta",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "amount": 234854.47,
+      "__typename": "PoolType"
+    },
+    {
+      "wagerType": {
+        "id": 260,
+        "code": "SH5",
+        "name": "Superhighfive",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "amount": 28915.76,
+      "__typename": "PoolType"
+    },
+    {
+      "wagerType": {
+        "id": 160,
+        "code": "TR",
+        "name": "Trifecta",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "amount": 923133.37,
+      "__typename": "PoolType"
+    },
+    {
+      "wagerType": {
+        "id": 10,
+        "code": "WN",
+        "name": "Win",
+        "__typename": "WagerGroupEnumeration"
+      },
+      "amount": 1759777,
+      "__typename": "PoolType"
+    }
+  ],
+  "results": null,
+  "promos": []
+}

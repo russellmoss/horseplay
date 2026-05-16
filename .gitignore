@@ -1,0 +1,45 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# next.js
+.next/
+out/
+build/
+dist/
+
+# env
+.env
+.env.local
+.env.*.local
+
+# auth — NEVER commit session state, chrome profiles, or network captures
+auth/
+
+# exported XLSX files
+export/
+
+# Persisted simulation data (survives pnpm dev restart)
+data/
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# editor / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# test
+coverage/
+.vitest/
+
+# Claude MCP config (local paths)
+.mcp.json
+
+# misc
+*.tsbuildinfo
