@@ -19,13 +19,6 @@ export async function GET() {
     listRacesFromDb(),
     listTrackedTracks(),
   ]);
-
-  const trackCounts: Record<string, number> = {};
-  for (const r of races) {
-    const tc = r?.race?.trackCode ?? 'UNKNOWN';
-    trackCounts[tc] = (trackCounts[tc] ?? 0) + 1;
-  }
-
   return NextResponse.json(
     {
       status: {
@@ -42,7 +35,6 @@ export async function GET() {
       },
       races,
       count: races.length,
-      _debug: { trackCounts },
     },
     {
       headers: {
