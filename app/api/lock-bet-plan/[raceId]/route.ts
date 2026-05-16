@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
 import {
-  getRace,
   getLockedRecommendation,
   lockRecommendation,
 } from '../../../../lib/store';
+import { getRaceAny } from '../../../../lib/race-data';
 import { generateBetPlan, type BetPlanResult } from '../../../../lib/ai/bet-planner';
 import type {
   BetTicket,
@@ -53,7 +53,7 @@ export async function POST(
   }
   const stakeCap = Math.max(2, Math.floor(body.budget ?? DEFAULT_STAKE_CAP));
 
-  const analysis = getRace(raceId);
+  const analysis = await getRaceAny(raceId);
   if (!analysis) {
     return NextResponse.json(
       { error: `No cached analysis for race ${raceId}` },

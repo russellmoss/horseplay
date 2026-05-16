@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getRace } from '../../../lib/store';
+import { getRaceAny } from '../../../lib/race-data';
 import { generateBetPlan } from '../../../lib/ai/bet-planner';
 
 export const dynamic = 'force-dynamic';
@@ -42,7 +42,7 @@ function parseParams(url: URL): { raceId: string | null; budget: number } {
 }
 
 async function fetchFresh(raceId: string, budget: number) {
-  const analysis = getRace(raceId);
+  const analysis = await getRaceAny(raceId);
   if (!analysis) {
     return { error: `No cached analysis for race ${raceId}`, status: 404 as const };
   }

@@ -577,17 +577,15 @@ export default function DashboardPage() {
         </div>
       )}
 
-      {data.status.state !== 'remote' && (
-        <Chat
-          bets={bets}
-          focusedRaceId={selectedRace?.race.raceId ?? null}
-          focusedRaceLabel={
-            selectedRace
-              ? `${selectedRace.race.trackCode} R${selectedRace.race.raceNumber}`
-              : null
-          }
-        />
-      )}
+      <Chat
+        bets={bets}
+        focusedRaceId={selectedRace?.race.raceId ?? null}
+        focusedRaceLabel={
+          selectedRace
+            ? `${selectedRace.race.trackCode} R${selectedRace.race.raceNumber}`
+            : null
+        }
+      />
 
       {/* Video toggle — sits just above the chat launcher */}
       <button

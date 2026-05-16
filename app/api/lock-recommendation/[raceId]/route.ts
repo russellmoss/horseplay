@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
 import {
-  getRace,
   getLockedRecommendation,
   lockRecommendation,
 } from '../../../../lib/store';
+import { getRaceAny } from '../../../../lib/race-data';
 import { generateRecommendation } from '../../../../lib/ai/recommend';
 
 export const dynamic = 'force-dynamic';
@@ -41,7 +41,7 @@ export async function POST(
   }
   const budget = Math.max(2, Math.floor(body.budget ?? 20));
 
-  const analysis = getRace(raceId);
+  const analysis = await getRaceAny(raceId);
   if (!analysis) {
     return NextResponse.json(
       { error: `No cached analysis for race ${raceId}` },

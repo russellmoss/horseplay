@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { listRaces } from '../../../lib/store';
+import { listRacesAny } from '../../../lib/race-data';
 import { chat, type ChatTurn } from '../../../lib/ai/chat';
 import type { PlacedBet } from '../../_components/bets';
 
@@ -47,7 +47,7 @@ export async function POST(req: Request) {
     );
   }
 
-  const races = listRaces();
+  const races = await listRacesAny();
   const bets = Array.isArray(body.bets) ? body.bets : [];
   const focusedRaceId =
     typeof body.focusedRaceId === 'string' ? body.focusedRaceId : null;

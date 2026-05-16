@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
-import { getRace, lockRecommendation } from '../../../../lib/store';
+import { lockRecommendation } from '../../../../lib/store';
+import { getRaceAny } from '../../../../lib/race-data';
 import { generateVoicePick } from '../../../../lib/ai/voice-pick';
 import { synthesizeSpeech } from '../../../../lib/ai/elevenlabs';
 import { prepareTextForTts } from '../../../../lib/ai/speech';
@@ -24,7 +25,7 @@ export async function GET(
   if (!raceId) {
     return NextResponse.json({ error: 'raceId required' }, { status: 400 });
   }
-  const analysis = getRace(raceId);
+  const analysis = await getRaceAny(raceId);
   if (!analysis) {
     return NextResponse.json(
       { error: `No cached analysis for race ${raceId}` },

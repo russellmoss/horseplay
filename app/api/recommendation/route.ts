@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { listRaces } from '../../../lib/store';
+import { listRacesAny } from '../../../lib/race-data';
 import {
   generateRecommendation,
   type RecommendationOptions,
@@ -43,7 +43,7 @@ function cacheKey(opts: RecommendationOptions): string {
 }
 
 async function fetchFresh(opts: RecommendationOptions): Promise<RecommendationResult> {
-  const races = listRaces();
+  const races = await listRacesAny();
   return generateRecommendation(races, opts);
 }
 
