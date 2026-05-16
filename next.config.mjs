@@ -2,10 +2,10 @@
 const config = {
   reactStrictMode: true,
   experimental: {
-    // Mark Playwright as a server-only dep so the App Router doesn't try to
-    // bundle it into client / RSC code paths.
-    serverComponentsExternalPackages: ['playwright', 'playwright-core'],
-    // Enable instrumentation.ts boot hook.
+    serverComponentsExternalPackages: [
+      'playwright', 'playwright-core',
+      'playwright-extra', 'puppeteer-extra-plugin-stealth',
+    ],
     instrumentationHook: true,
   },
   // Webpack-level externals: instrumentation.ts and API route handlers go
@@ -22,10 +22,12 @@ const config = {
           : [];
       cfg.externals = [
         ...externals,
-        // Playwright itself
         'playwright',
         'playwright-core',
-        // Optional native deps Playwright probes for and we don't need
+        'playwright-extra',
+        'puppeteer-extra-plugin-stealth',
+        'clone-deep',
+        'merge-deep',
         'electron',
         'bufferutil',
         'utf-8-validate',
