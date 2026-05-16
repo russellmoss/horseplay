@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { neon } from '@neondatabase/serverless';
 
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
@@ -15,11 +16,19 @@ export async function GET() {
   }
 
   const db = await import('../../../lib/db');
-  const [races, trackedTracks] = await Promise.all([
-    db.listRacesFromDb(),
-    db.listTrackedTracks(),
-  ]);
-  const debugTrackedTracks = await db.listTrackedTracks();
+  const races = await db.listRacesFromDb();
+  const trackedTracks = await db.listTrackedTracks();
+
+  // Direct DB query for debugging
+  let rawTracks: string[] = [];
+  try {
+    const sql = neon(process.env.DATABASE_URL!);
+    const rows = await sql`SELECT track_code FROM tracked_tracks ORDER BY added_at ASC`;
+    rawTracks = rows.map((r) => r.track_code as string);
+  } catch (e) {
+    rawTracks = [`ERROR: ${e instanceof Error ? e.message : String(e)}`];
+  }
+
   return NextResponse.json({
     status: {
       state: 'remote',
@@ -35,10 +44,6 @@ export async function GET() {
     },
     races,
     count: races.length,
-    _debug: {
-      trackedTracks,
-      debugTrackedTracks,
-      dbUrl: (process.env.DATABASE_URL ?? '').replace(/:[^@]+@/, ':***@').slice(0, 80),
-    },
+    _debug: { trackedTracks, rawTracks },
   });
 }
